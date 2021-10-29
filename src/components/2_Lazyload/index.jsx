@@ -9,12 +9,11 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import MyNavLink from "./components/MyNavLink";
 
 //懒加载 用lazy函数引入路由组件
-const Home = lazy(() => {
-  import("./pages/Home");
-});
-const About = lazy(() => {
-  import("./pages/About");
-});
+//NO {}!!! else will cause error
+const Home = lazy(() => 
+  import("./pages/Home"));
+const About = lazy(() => 
+  import("./pages/About"));
 
 export default class Demo2 extends Component {
   render() {

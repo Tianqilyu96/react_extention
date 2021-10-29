@@ -116,16 +116,18 @@
 
 
 ## 4. Fragment
-
-### 使用
-
+```html
+   (1) 使用
+	import {Fragment} from 'react'
+	
 	<Fragment><Fragment>
 	<></>
 
-### 作用
+   (2)作用
 
-> 可以不用必须有一个真实的DOM根标签了
-
+   可以不用必须有一个真实的DOM根标签<div></div>了
+   区别：fragment可以有key-可以遍历，空标签没key
+```
 
 
 <hr/>
